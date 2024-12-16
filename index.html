@@ -1,0 +1,52 @@
+<DOCTYPE Html>
+<Html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping List</title>
+        <style>
+            body {
+                background-image: url('https://cdn.shopify.com/s/files/1/0070/7032/articles/ecommerce_20shopping_20cart_4c343e41-1041-49d3-bca8-3d7d1aa06d90.png?v=1729263457&originalWidth=1848&originalHeight=782&width=1200');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .list-container {
+                margin-top: 30px;
+            }
+            .list-item {
+                display: flex;
+                justify-items: auto; 
+                align-items: center;
+                padding: 20px;
+                border: 2px solid #fdd; 
+            }
+            .list-item-purchased {
+                text-decoration: line-through;
+                background-color: #add8e6;
+            }
+            .buttons button {
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ShopItems">
+            <h1 style="background-color: rgb(168, 179, 228); color: white; padding: 10px; text-align: center;"></h1>Shopping List</h1>
+            <form id="addshopitem">
+                <input type="text" id="itemInput" placeholder="Enter item name">
+                <button type="addItem">Add</button>
+            </form>
+            <div class="button">
+                <button id="clearList">Clear List</button>
+
+            </div>
+            <ul id="itemList">
+
+            </ul>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</Html>
